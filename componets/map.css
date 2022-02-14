@@ -1,5 +1,4 @@
-.map {
-  background: url("./map/map.png");
+.map-section {
   /*height: rem(780px);*/
   height: 100vh; }
 
