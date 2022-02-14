@@ -55,42 +55,43 @@
  
 
 
-  .slider__list__one{         //li
-    display: flex;
-    width: rem(100px);
-    height: 100vh;
-    justify-content: flex-start;
-    background:  #999999;
+  .slider__list{         //li
+   display: flex;
+  
     //padding: rem(20px);
     position: relative;
     
   }
   
-  
-  .slider__list__two{
+  .atlas{
     display: flex;
     width: rem(100px);
     height: 100vh;
-    background: #151515;
-    //padding: rem(20px);
-    
-   
+    background:  #999999;
+    justify-content: flex-start;
+    position: relative;
   }
-  
-  
-  
-  .slider__list__three{
+
+  .black{
+    width: rem(100px);
+    height: 100vh;
+    background: #151515;
+    position: relative;
+  }
+
+  .red{
     display: flex;
     width: rem(100px);
     height: 100vh;
     background: #E01F3C;
     justify-content: flex-end;
-    //padding: rem(20px);
-    
-    
+    position: relative;
   }
+  
 
   .slider__text__vloz--one ,.slider__text__vloz--two, .slider__text__vloz--three{     //текст внутри блоков ли
+    position: absolute;
+
     color:#fff;
     transform: rotate(-90deg);
     height: rem(36px);  
@@ -111,7 +112,7 @@
   .slider__text__vloz--two{
     position: absolute;
     top: rem(200px);
-    right:2rem;
+    right:-5rem;
     margin: 0;
   }
 
@@ -145,9 +146,7 @@
   .slider__content__one{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: rem(10px);
+    padding: 20px 60px 10px 10px;
   }
 
 
@@ -160,8 +159,8 @@
     width: rem(15px);
     height: rem(15px);
     background: #ffff;
-    top:rem(20px);
-    right: rem(20px);
+    top:-4rem;
+    right: -1rem;
 
   }
 

@@ -3,11 +3,11 @@ let myMap;
 const init = function()  {
  myMap = new yandexmaps.Map("map", {
    center: [55.76, 37.64],
-   zoom: 7
+   zoom: 11,
+   controls:[],
+
  });
-};
- 
-yandexmaps.ready(init);
+
 
 
 let coords = [
@@ -19,7 +19,7 @@ let coords = [
   myCollection = new yandexmaps.GeoObjectCollection({}, {
     draggable: false,
     iconLayout: 'default#image',
-    iconImageHref: './map/logo(1).png',
+    iconImageHref: './img/icons/marker.svg',
     iconImageSize: [46, 57],
     iconImageOffset: [-35, -52]
   });
@@ -31,6 +31,7 @@ for (let i = 0; i < coords.length; i++) {
 myMap.geoObjects.add(myCollection);
 
 myMap.behaviors.disable('scrollZoom');
-
-
+};
 yandexmaps.ready(init);
+
+
